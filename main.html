@@ -603,6 +603,17 @@
   .cta-duo .btn{min-width:210px;justify-content:center}
   .final .club-id{margin-top:44px}
 
+  /* --- две кнопки всегда в один ряд (телефоны) --- */
+  @media(max-width:520px){
+    .hero .cta-row,.cta-duo{flex-wrap:nowrap;gap:10px}
+    .hero .cta-row .btn,.cta-duo .btn{
+      flex:1 1 0;min-width:0;
+      padding:13px 10px;gap:7px;
+      font-size:.82rem;white-space:nowrap;
+    }
+    .hero .cta-row .btn svg,.cta-duo .btn svg{flex:0 0 auto}
+  }
+
   /* ---------- FOOTER ---------- */
   footer{
     border-top:1px solid var(--line);
