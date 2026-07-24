@@ -1105,7 +1105,7 @@
 
 <!-- ===================== TOP BAR ===================== -->
 <header class="topbar">
-  <button class="burger" id="burgerBtn" aria-label="Open menu">▾<span>OLYMP ONLINE</span></button>
+  <button class="burger" id="burgerBtn" aria-label="Open menu">▾<span>OLYMP</span></button>
   <div class="lang" id="langWrap">
     <button class="lang-btn" id="langBtn"><svg class="flag" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#012169"/><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"/><path d="M0 0l24 16M24 0L0 16" stroke="#C8102E" stroke-width="1.6"/><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.2"/><path d="M12 0v16M0 8h24" stroke="#C8102E" stroke-width="3"/></svg><span>EN</span> ▾</button>
     <div class="lang-menu" id="langMenu">
@@ -1607,20 +1607,6 @@
     document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeFab(); });
   })();
 
-  // ----- Окно Join Club -----
-  (function(){
-    const modal = document.getElementById('joinModal');
-    const btn   = document.querySelector('.hero-bottom .btn-gold');
-    if(!modal || !btn) return;
-
-    const open  = e => { e.preventDefault(); modal.classList.add('open'); };
-    const close = () => modal.classList.remove('open');
-
-    btn.addEventListener('click', open);
-    document.getElementById('joinClose').addEventListener('click', close);
-    modal.addEventListener('click', e=>{ if(e.target===modal) close(); });
-    document.addEventListener('keydown', e=>{ if(e.key==='Escape') close(); });
-  })();
 
   // ----- Burger drawer -----
   const drawer = document.getElementById('drawer');
