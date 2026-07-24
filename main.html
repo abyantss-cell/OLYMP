@@ -352,13 +352,14 @@
   /* WhatsApp в герое: подложка с лёгким размытием поверх золотой обводки */
   .btn-edge{
     background:rgba(0,0,0,.1);
-    -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2.5px);backdrop-filter:blur(2.5px);
   }
   /* WhatsApp — вторая кнопка связи, зелёный Rolex */
   .btn-wa{
     color:var(--gold-1);
     background:rgba(0,105,62,.18);
     border:1px solid rgba(0,105,62,.85);
+    -webkit-backdrop-filter:blur(2.5px);backdrop-filter:blur(2.5px);
   }
   .btn-wa svg{color:#0C8B55}
   /* зелёная кнопка с размытием, как у Tables */
@@ -366,7 +367,7 @@
     background:
       linear-gradient(0deg, rgba(0,0,0,.32), rgba(0,0,0,.32)),   /* затемнение */
       rgba(0,105,62,.18);
-    -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2.5px);backdrop-filter:blur(2.5px);
   }     /* на пару тонов светлее — иначе тонет в тёмном фоне */
   .btn-wa:hover{
     background:rgba(0,105,62,.32);border-color:var(--rolex);
