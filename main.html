@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>THE OLYMP — Elite PLO Club · PPPoker</title>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="preload" as="image" href="assets/img2.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img2.webp" media="(max-width:767.98px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-desktop.webp" media="(min-width:768px)" fetchpriority="high">
 <style>
   :root{
     --edge:28px;            /* отступ от боковых краёв экрана */
@@ -83,7 +84,7 @@
     overflow:hidden;
   }
   /* hero cover image */
-  .hero-cover{
+  .hero-cover{background-image:url(assets/img2.webp);
     position:absolute;inset:0;z-index:-3;pointer-events:none;
     background-size:cover;
     background-position:center center;
@@ -1093,6 +1094,9 @@
     min-width:172px;           /* ширина прежней кнопки Claim Offer */
     justify-content:center;
   }
+
+  /* desktop hero cover */
+  @media(min-width:768px){.hero-cover{background-image:url(assets/hero-desktop.webp)}}
 </style>
 </head>
 <body>
@@ -1144,7 +1148,7 @@
 
 <!-- ===================== HERO ===================== -->
 <section id="top" class="hero">
-<div class="hero-cover" style="background-image:url(assets/img2.webp)"></div>
+<div class="hero-cover"></div>
   <div class="hero-blur top"></div>
   <div class="hero-blur bottom"></div>
   <div class="hero-veil"></div>
